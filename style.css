@@ -1,3 +1,160 @@
 /*
     #404040
 */
+
+body{
+    font-family: roboto;
+}
+
+.container {
+    /*background-color: #404040; */
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.margin--6px {
+    margin: 6px;
+}
+
+.container--top {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+}
+
+.color {
+    color: #404040;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline solid #404040;
+}
+
+.apps--png {
+    height: 22px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.image:hover {
+    border-radius: 50px;
+    transition: 0.5s;
+    background-color: #e5e5e55f;
+}
+
+.login {
+    margin-right: 15px;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: rgb(48, 103, 254);
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.login:hover {
+    box-shadow: 0 0.1px 2px #404040;
+    background-color: rgb(58, 109, 249);
+}
+
+.container--middle {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container--google {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container--google img{
+    height: 92px;
+}
+
+.input--area {
+    margin-top: 20px;
+    border: solid 1px #40404035;
+    height: 50px;
+    border-radius: 25px;
+    width: 500px;
+}
+
+.search {
+    height: 20px;
+    margin-left: 8px;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(100%) hue-rotate(30deg);
+}
+
+input {
+    border: none;
+}
+
+.svg--middle {
+    display: contents;
+}
+
+.keyboard {
+    height: 13px;
+    margin: 0 15px;
+}
+
+.height--25 {
+    height: 25px;
+    margin-right: 15px;
+}
+
+.center {
+    margin: 30px;
+}
+
+.center button {
+    height: 35px;
+    font-size: 15px;
+    margin: 0 5px;
+    padding: 0 15px;
+    border: 1px solid #40404000;
+    background-color: #f8f8f8;
+}
+
+.center button:hover {
+    border: 1px solid #4040401c;
+}
+
+.container--bottom {
+    height: 100vh;
+    justify-content: end;
+}
+
+.sub--footer {
+    margin: 5px 30px;
+    font-size: 15px;
+}
+
+.underline {
+    width: 100%;
+    border-top: 1px solid #4040403a;
+    margin: 10px 0px;
+}
+
+.footer {
+    margin: 10px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
