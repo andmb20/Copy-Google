@@ -167,3 +167,92 @@ input {
     display: flex;
     justify-content: space-between;
 }
+
+/* Variáveis para o tema light */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #404040;
+    --button-bg: #f8f8f8;
+    --button-hover: #4040401c;
+    --input-border: #40404035;
+    --icon-filter: brightness(0) saturate(100%) invert(50%) sepia(100%) hue-rotate(30deg);
+    --login-bg: rgb(48, 103, 254);
+    --login-hover: rgb(58, 109, 249);
+    --login-bg: rgb(48, 103, 254);
+    --login-text: #ffffff;
+    --lampshade-bg: #404040;
+    --hover-bg: #4343435f;
+  }
+  
+  /* Variáveis para o tema dark */
+  .dark-mode {
+    --bg-color: #202124;
+    --text-color: #e8eaed;
+    --button-bg: #303134;
+    --button-hover: #3c4043;
+    --button-text: #e8eaed;
+    --input-border: #5f6368;
+    --icon-filter: brightness(0) saturate(100%) invert(100%);
+    --login-bg: #c3c3c3;
+    --login-hover: #d1d1d1;
+    --login-bg: #c3c3c3;
+    --login-text: #000000;
+    --lampshade-bg: #c3c3c3;
+    --hover-bg: #5f636833;
+  }
+  
+  /* Aplicando as variáveis */
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .color {
+    color: var(--text-color);
+  }
+  
+  a:hover {
+    text-decoration: underline solid var(--text-color);
+  }
+  
+  .image--lampshade {
+    background-color: var(--lampshade-bg);
+  }
+  
+  .image:hover {
+    background-color: var(--hover-bg);
+  }
+  
+  .login {
+    background-color: var(--login-bg);
+    color: var(--login-text);
+  }
+  
+  .login:hover {
+    background-color: var(--login-hover);
+  }
+  
+  .input--area {
+    border: solid 1px var(--input-border);
+  }
+  
+  .search {
+    filter: var(--icon-filter);
+  }
+  
+  .center button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+  }
+  
+  .center button:hover {
+    border: 1px solid var(--button-hover);
+  }
+
+  .dark-mode .text--area {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    outline: none;
+    font-size: 18px;
+  }
