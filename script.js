@@ -23,8 +23,8 @@ imageLampshade.addEventListener("click", () => {
 function updateLampshadeIcon(isDarkMode) {
     const img = imageLampshade.querySelector('img');
     img.src = isDarkMode ? 
-        "/assets/img/lampshade.png" : 
-        "/assets/img/lampshade-white.png";
+        "/assets/img/lamp.png" : 
+        "/assets/img/lamp-white.png";
     img.alt = isDarkMode ? "Light mode" : "Dark mode";
 
     const appsIcon = document.querySelector('.apps--png');
