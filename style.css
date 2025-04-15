@@ -104,6 +104,12 @@ a:hover {
     width: 500px;
 }
 
+.text--area {
+    outline: none;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
 .search {
     height: 20px;
     margin-left: 8px;
@@ -255,4 +261,5 @@ input {
     color: var(--text-color);
     outline: none;
     font-size: 18px;
+    transition: background-color 0.3s ease;
   }
