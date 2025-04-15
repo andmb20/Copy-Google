@@ -11,10 +11,10 @@ if (savedTheme === 'dark') {
 // Alterna entre temas
 imageLampshade.addEventListener("click", () => {
     const isDarkMode = body.classList.toggle('dark-mode');
-    
+
     // Salva a preferência
     localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-    
+
     // Atualiza o ícone
     updateLampshadeIcon(isDarkMode);
 });
@@ -22,13 +22,13 @@ imageLampshade.addEventListener("click", () => {
 // Função para atualizar o ícone do lampshade
 function updateLampshadeIcon(isDarkMode) {
     const img = imageLampshade.querySelector('img');
-    img.src = isDarkMode ? 
-        "/assets/img/lamp.png" : 
-        "/assets/img/lamp-white.png";
+    img.src = isDarkMode ?
+        "assets/img/lamp.png" :
+        "assets/img/lamp-white.png";
     img.alt = isDarkMode ? "Light mode" : "Dark mode";
 
     const appsIcon = document.querySelector('.apps--png');
-    appsIcon.src = isDarkMode ? 
-    "assets/img/apps-white.png" : 
-    "assets/img/apps.png";
+    appsIcon.src = isDarkMode ?
+        "assets/img/apps-white.png" :
+        "assets/img/apps.png";
 }
