@@ -24,7 +24,7 @@ function updateLampshadeIcon(isDarkMode) {
     const img = imageLampshade.querySelector('img');
     img.src = isDarkMode ?
         "assets/img/lamp.png" :
-        "assets/img/lamp-white.png";
+        "assets/img/lampshade-white.png";
     img.alt = isDarkMode ? "Light mode" : "Dark mode";
 
     const appsIcon = document.querySelector('.apps--png');
