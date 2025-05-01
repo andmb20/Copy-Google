@@ -264,3 +264,90 @@ input {
     font-size: 18px;
     transition: background-color 0.3s ease;
   }
+
+  @media (max-width: 530px){
+    .container--google img {
+        height: 70px;
+    }
+
+    .input--area {
+        height: 40px;
+        width: 390px;
+    }
+
+    .text--area {
+        font-size: 15px;
+    }
+
+    .search {
+        margin-left: 10px;
+        height: 17px;
+    }
+
+    .keyboard {
+        display: none;
+    }
+
+    .height--25 {
+        height: 20px;
+        margin-left: -5px;
+    }
+
+    .center {
+        margin: 15px;
+    }
+}
+
+  /* MOBILE */
+  @media (max-width: 435px) {
+    .container--top {
+        height: 50px;
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .container--google img {
+        height: 70px;
+    }
+
+    .container--middle {
+        margin-top: -100px;
+    }
+
+    .input--area {
+        height: 30px;
+        width: 300px;
+    }
+
+    .text--area {
+        font-size: 13px;
+    }
+
+    .search {
+        margin-left: 10px;
+        height: 16px;
+    }
+
+    .keyboard {
+        display: none;
+    }
+
+    .height--25 {
+        height: 18px;
+        margin-left: -5px;
+    }
+
+    .center {
+        margin: 15px;
+    }
+    
+    .center button {
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .container--bottom {
+        display: none;
+    }
+
+}
